@@ -6,7 +6,7 @@
 #include "uart.h"
 #include "function.h"
 
-#define FINTDIV_BASE ((uint32_t)0x40003800)
+#define FINTDIV_BASE ((uint32_t)0x50061000)
 
 #define FINTDIV_CR          (FINTDIV_BASE+0x00)
 #define FINTDIV_SR          (FINTDIV_BASE+0x04)

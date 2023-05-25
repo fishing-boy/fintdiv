@@ -6,7 +6,7 @@
 #include "uart.h"
 #include "function.h"
 
-#define FINTDIV_BASE ((uint32_t)0x40003800)
+#define FINTDIV_BASE ((uint32_t)0x50061000)
 
 #define FINTDIV_CR          (FINTDIV_BASE+0x00)
 #define FINTDIV_SR          (FINTDIV_BASE+0x04)
@@ -36,5 +36,19 @@ typedef struct
   __IO uint32_t RADICAND;
   __IO uint32_t R00T;
 } FINTDIV_TypeDef;
+
+#define FINTDIV_CR_DIVGO               (0x00000001)  //0:启动     1:停止   除法运算
+#define FINTDIV_CR_DIVSIGN             (0x00000002)  //0:有符号数 1:无符号数
+#define FINTDIV_CR_ROOTGO              (0x00000100)  //0:启动     1:停止   开方运算
+#define FINTDIV_CR_ROOTMOD             (0x00000200)  //0:开方计算结果保留16位整数     1:开方计算结果保留16位整数+16位小数
+
+#define FINTDIV_INTEN_DIVEN            (0x00000001)  //除法运算中断使能
+#define FINTDIV_INTEN_ROOTINTEN        (0x00000002)  //开方整数运算中断使能
+#define FINTDIV_INTEN_ROOTDECEN        (0x00000004)  //开方小数运算中断使能
+
+#define FINTDIV_INTCLEAL_DIVEN         (0x00000001)  //除法运算中断清除
+#define FINTDIV_INTCLEAL_ROOTINTEN     (0x00000002)  //开方整数运算中断清除
+#define FINTDIV_INTCLEAL_ROOTDECEN     (0x00000004)  //开方小数运算中断清除
+
 
 #endif

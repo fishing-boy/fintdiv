@@ -1,4 +1,4 @@
-Component: ARM Compiler 5.06 update 5 (build 528) Tool: armlink [4d35e2]
+Component: ARM Compiler 5.06 update 6 (build 750) Tool: armlink [4d35ed]
 
 ==============================================================================
 
@@ -1495,28 +1495,28 @@ Image Symbol Table
     i.BusFault_Handler                       0x08000270   Section        0  stm32f4xx_it.o(i.BusFault_Handler)
     i.DebugMon_Handler                       0x08000274   Section        0  stm32f4xx_it.o(i.DebugMon_Handler)
     i.FINTDIV_IRQHandler                     0x08000278   Section        0  function.o(i.FINTDIV_IRQHandler)
-    i.HardFault_Handler                      0x080002dc   Section        0  stm32f4xx_it.o(i.HardFault_Handler)
-    i.MemManage_Handler                      0x080002e0   Section        0  stm32f4xx_it.o(i.MemManage_Handler)
-    i.NMI_Handler                            0x080002e4   Section        0  stm32f4xx_it.o(i.NMI_Handler)
-    i.NVIC_Init                              0x080002e8   Section        0  misc.o(i.NVIC_Init)
-    i.PendSV_Handler                         0x08000360   Section        0  stm32f4xx_it.o(i.PendSV_Handler)
-    i.SVC_Handler                            0x08000362   Section        0  stm32f4xx_it.o(i.SVC_Handler)
-    i.SetSysClock                            0x08000364   Section        0  system_stm32f4xx.o(i.SetSysClock)
-    SetSysClock                              0x08000365   Thumb Code   272  system_stm32f4xx.o(i.SetSysClock)
-    i.SysTick_Handler                        0x08000484   Section        0  stm32f4xx_it.o(i.SysTick_Handler)
-    i.SystemInit                             0x08000488   Section        0  system_stm32f4xx.o(i.SystemInit)
-    i.UartPutc                               0x080004f0   Section        0  uart.o(i.UartPutc)
-    i.UartStdOutInit                         0x0800050c   Section        0  uart.o(i.UartStdOutInit)
-    i.UsageFault_Handler                     0x08000590   Section        0  stm32f4xx_it.o(i.UsageFault_Handler)
-    i.__0printf$1                            0x08000594   Section        0  printf1.o(i.__0printf$1)
-    i.__scatterload_copy                     0x080005b4   Section       14  handlers.o(i.__scatterload_copy)
-    i.__scatterload_null                     0x080005c2   Section        2  handlers.o(i.__scatterload_null)
-    i.__scatterload_zeroinit                 0x080005c4   Section       14  handlers.o(i.__scatterload_zeroinit)
-    i._printf_core                           0x080005d4   Section        0  printf1.o(i._printf_core)
-    _printf_core                             0x080005d5   Thumb Code   336  printf1.o(i._printf_core)
-    i.fintdiv_init                           0x08000728   Section        0  function.o(i.fintdiv_init)
-    i.fputc                                  0x080007a0   Section        0  uart.o(i.fputc)
-    i.main                                   0x080007b0   Section        0  main.o(i.main)
+    i.HardFault_Handler                      0x080002d8   Section        0  stm32f4xx_it.o(i.HardFault_Handler)
+    i.MemManage_Handler                      0x080002dc   Section        0  stm32f4xx_it.o(i.MemManage_Handler)
+    i.NMI_Handler                            0x080002e0   Section        0  stm32f4xx_it.o(i.NMI_Handler)
+    i.NVIC_Init                              0x080002e4   Section        0  misc.o(i.NVIC_Init)
+    i.PendSV_Handler                         0x0800035c   Section        0  stm32f4xx_it.o(i.PendSV_Handler)
+    i.SVC_Handler                            0x0800035e   Section        0  stm32f4xx_it.o(i.SVC_Handler)
+    i.SetSysClock                            0x08000360   Section        0  system_stm32f4xx.o(i.SetSysClock)
+    SetSysClock                              0x08000361   Thumb Code   272  system_stm32f4xx.o(i.SetSysClock)
+    i.SysTick_Handler                        0x08000480   Section        0  stm32f4xx_it.o(i.SysTick_Handler)
+    i.SystemInit                             0x08000484   Section        0  system_stm32f4xx.o(i.SystemInit)
+    i.UartPutc                               0x080004ec   Section        0  uart.o(i.UartPutc)
+    i.UartStdOutInit                         0x08000508   Section        0  uart.o(i.UartStdOutInit)
+    i.UsageFault_Handler                     0x0800058c   Section        0  stm32f4xx_it.o(i.UsageFault_Handler)
+    i.__0printf$1                            0x08000590   Section        0  printf1.o(i.__0printf$1)
+    i.__scatterload_copy                     0x080005b0   Section       14  handlers.o(i.__scatterload_copy)
+    i.__scatterload_null                     0x080005be   Section        2  handlers.o(i.__scatterload_null)
+    i.__scatterload_zeroinit                 0x080005c0   Section       14  handlers.o(i.__scatterload_zeroinit)
+    i._printf_core                           0x080005d0   Section        0  printf1.o(i._printf_core)
+    _printf_core                             0x080005d1   Thumb Code   336  printf1.o(i._printf_core)
+    i.fintdiv_init                           0x08000724   Section        0  function.o(i.fintdiv_init)
+    i.fputc                                  0x0800078c   Section        0  uart.o(i.fputc)
+    i.main                                   0x0800079c   Section        0  main.o(i.main)
     .data                                    0x20000000   Section        4  stdout.o(.data)
     STACK                                    0x20000008   Section     1024  startup_stm32f429_439xx.o(STACK)
 
@@ -1696,29 +1696,29 @@ Image Symbol Table
     __scatterload_rt2                        0x0800024d   Thumb Code     0  init.o(.text)
     BusFault_Handler                         0x08000271   Thumb Code     4  stm32f4xx_it.o(i.BusFault_Handler)
     DebugMon_Handler                         0x08000275   Thumb Code     2  stm32f4xx_it.o(i.DebugMon_Handler)
-    FINTDIV_IRQHandler                       0x08000279   Thumb Code    48  function.o(i.FINTDIV_IRQHandler)
-    HardFault_Handler                        0x080002dd   Thumb Code     4  stm32f4xx_it.o(i.HardFault_Handler)
-    MemManage_Handler                        0x080002e1   Thumb Code     4  stm32f4xx_it.o(i.MemManage_Handler)
-    NMI_Handler                              0x080002e5   Thumb Code     2  stm32f4xx_it.o(i.NMI_Handler)
-    NVIC_Init                                0x080002e9   Thumb Code   106  misc.o(i.NVIC_Init)
-    PendSV_Handler                           0x08000361   Thumb Code     2  stm32f4xx_it.o(i.PendSV_Handler)
-    SVC_Handler                              0x08000363   Thumb Code     2  stm32f4xx_it.o(i.SVC_Handler)
-    SysTick_Handler                          0x08000485   Thumb Code     2  stm32f4xx_it.o(i.SysTick_Handler)
-    SystemInit                               0x08000489   Thumb Code    88  system_stm32f4xx.o(i.SystemInit)
-    UartPutc                                 0x080004f1   Thumb Code    24  uart.o(i.UartPutc)
-    UartStdOutInit                           0x0800050d   Thumb Code   120  uart.o(i.UartStdOutInit)
-    UsageFault_Handler                       0x08000591   Thumb Code     4  stm32f4xx_it.o(i.UsageFault_Handler)
-    __0printf$1                              0x08000595   Thumb Code    22  printf1.o(i.__0printf$1)
-    __1printf$1                              0x08000595   Thumb Code     0  printf1.o(i.__0printf$1)
-    __2printf                                0x08000595   Thumb Code     0  printf1.o(i.__0printf$1)
-    __scatterload_copy                       0x080005b5   Thumb Code    14  handlers.o(i.__scatterload_copy)
-    __scatterload_null                       0x080005c3   Thumb Code     2  handlers.o(i.__scatterload_null)
-    __scatterload_zeroinit                   0x080005c5   Thumb Code    14  handlers.o(i.__scatterload_zeroinit)
-    fintdiv_init                             0x08000729   Thumb Code    86  function.o(i.fintdiv_init)
-    fputc                                    0x080007a1   Thumb Code    14  uart.o(i.fputc)
-    main                                     0x080007b1   Thumb Code    18  main.o(i.main)
-    Region$$Table$$Base                      0x080007dc   Number         0  anon$$obj.o(Region$$Table)
-    Region$$Table$$Limit                     0x080007fc   Number         0  anon$$obj.o(Region$$Table)
+    FINTDIV_IRQHandler                       0x08000279   Thumb Code    44  function.o(i.FINTDIV_IRQHandler)
+    HardFault_Handler                        0x080002d9   Thumb Code     4  stm32f4xx_it.o(i.HardFault_Handler)
+    MemManage_Handler                        0x080002dd   Thumb Code     4  stm32f4xx_it.o(i.MemManage_Handler)
+    NMI_Handler                              0x080002e1   Thumb Code     2  stm32f4xx_it.o(i.NMI_Handler)
+    NVIC_Init                                0x080002e5   Thumb Code   106  misc.o(i.NVIC_Init)
+    PendSV_Handler                           0x0800035d   Thumb Code     2  stm32f4xx_it.o(i.PendSV_Handler)
+    SVC_Handler                              0x0800035f   Thumb Code     2  stm32f4xx_it.o(i.SVC_Handler)
+    SysTick_Handler                          0x08000481   Thumb Code     2  stm32f4xx_it.o(i.SysTick_Handler)
+    SystemInit                               0x08000485   Thumb Code    88  system_stm32f4xx.o(i.SystemInit)
+    UartPutc                                 0x080004ed   Thumb Code    24  uart.o(i.UartPutc)
+    UartStdOutInit                           0x08000509   Thumb Code   120  uart.o(i.UartStdOutInit)
+    UsageFault_Handler                       0x0800058d   Thumb Code     4  stm32f4xx_it.o(i.UsageFault_Handler)
+    __0printf$1                              0x08000591   Thumb Code    22  printf1.o(i.__0printf$1)
+    __1printf$1                              0x08000591   Thumb Code     0  printf1.o(i.__0printf$1)
+    __2printf                                0x08000591   Thumb Code     0  printf1.o(i.__0printf$1)
+    __scatterload_copy                       0x080005b1   Thumb Code    14  handlers.o(i.__scatterload_copy)
+    __scatterload_null                       0x080005bf   Thumb Code     2  handlers.o(i.__scatterload_null)
+    __scatterload_zeroinit                   0x080005c1   Thumb Code    14  handlers.o(i.__scatterload_zeroinit)
+    fintdiv_init                             0x08000725   Thumb Code    72  function.o(i.fintdiv_init)
+    fputc                                    0x0800078d   Thumb Code    14  uart.o(i.fputc)
+    main                                     0x0800079d   Thumb Code    18  main.o(i.main)
+    Region$$Table$$Base                      0x080007c8   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x080007e8   Number         0  anon$$obj.o(Region$$Table)
     __stdout                                 0x20000000   Data           4  stdout.o(.data)
     __initial_sp                             0x20000408   Data           0  startup_stm32f429_439xx.o(STACK)
 
@@ -1730,9 +1730,9 @@ Memory Map of the image
 
   Image Entry point : 0x080001e9
 
-  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x00000800, Max: 0x00100000, ABSOLUTE)
+  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x000007ec, Max: 0x00100000, ABSOLUTE)
 
-    Execution Region ER_IROM1 (Exec base: 0x08000000, Load base: 0x08000000, Size: 0x000007fc, Max: 0x00100000, ABSOLUTE)
+    Execution Region ER_IROM1 (Exec base: 0x08000000, Load base: 0x08000000, Size: 0x000007e8, Max: 0x00100000, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
@@ -1752,40 +1752,40 @@ Memory Map of the image
     0x08000270   0x08000270   0x00000004   Code   RO         5081    i.BusFault_Handler  stm32f4xx_it.o
     0x08000274   0x08000274   0x00000002   Code   RO         5082    i.DebugMon_Handler  stm32f4xx_it.o
     0x08000276   0x08000276   0x00000002   PAD
-    0x08000278   0x08000278   0x00000064   Code   RO         5189    i.FINTDIV_IRQHandler  function.o
-    0x080002dc   0x080002dc   0x00000004   Code   RO         5083    i.HardFault_Handler  stm32f4xx_it.o
-    0x080002e0   0x080002e0   0x00000004   Code   RO         5084    i.MemManage_Handler  stm32f4xx_it.o
-    0x080002e4   0x080002e4   0x00000002   Code   RO         5085    i.NMI_Handler       stm32f4xx_it.o
-    0x080002e6   0x080002e6   0x00000002   PAD
-    0x080002e8   0x080002e8   0x00000078   Code   RO          198    i.NVIC_Init         misc.o
-    0x08000360   0x08000360   0x00000002   Code   RO         5086    i.PendSV_Handler    stm32f4xx_it.o
-    0x08000362   0x08000362   0x00000002   Code   RO         5087    i.SVC_Handler       stm32f4xx_it.o
-    0x08000364   0x08000364   0x00000120   Code   RO            4    i.SetSysClock       system_stm32f4xx.o
-    0x08000484   0x08000484   0x00000002   Code   RO         5088    i.SysTick_Handler   stm32f4xx_it.o
-    0x08000486   0x08000486   0x00000002   PAD
-    0x08000488   0x08000488   0x00000068   Code   RO            6    i.SystemInit        system_stm32f4xx.o
-    0x080004f0   0x080004f0   0x0000001c   Code   RO          162    i.UartPutc          uart.o
-    0x0800050c   0x0800050c   0x00000084   Code   RO          163    i.UartStdOutInit    uart.o
-    0x08000590   0x08000590   0x00000004   Code   RO         5089    i.UsageFault_Handler  stm32f4xx_it.o
-    0x08000594   0x08000594   0x00000020   Code   RO         5270    i.__0printf$1       mc_w.l(printf1.o)
-    0x080005b4   0x080005b4   0x0000000e   Code   RO         5528    i.__scatterload_copy  mc_w.l(handlers.o)
-    0x080005c2   0x080005c2   0x00000002   Code   RO         5529    i.__scatterload_null  mc_w.l(handlers.o)
-    0x080005c4   0x080005c4   0x0000000e   Code   RO         5530    i.__scatterload_zeroinit  mc_w.l(handlers.o)
-    0x080005d2   0x080005d2   0x00000002   PAD
-    0x080005d4   0x080005d4   0x00000154   Code   RO         5277    i._printf_core      mc_w.l(printf1.o)
-    0x08000728   0x08000728   0x00000078   Code   RO         5191    i.fintdiv_init      function.o
-    0x080007a0   0x080007a0   0x0000000e   Code   RO          164    i.fputc             uart.o
-    0x080007ae   0x080007ae   0x00000002   PAD
-    0x080007b0   0x080007b0   0x0000002c   Code   RO         5156    i.main              main.o
-    0x080007dc   0x080007dc   0x00000020   Data   RO         5526    Region$$Table       anon$$obj.o
+    0x08000278   0x08000278   0x00000060   Code   RO         5189    i.FINTDIV_IRQHandler  function.o
+    0x080002d8   0x080002d8   0x00000004   Code   RO         5083    i.HardFault_Handler  stm32f4xx_it.o
+    0x080002dc   0x080002dc   0x00000004   Code   RO         5084    i.MemManage_Handler  stm32f4xx_it.o
+    0x080002e0   0x080002e0   0x00000002   Code   RO         5085    i.NMI_Handler       stm32f4xx_it.o
+    0x080002e2   0x080002e2   0x00000002   PAD
+    0x080002e4   0x080002e4   0x00000078   Code   RO          198    i.NVIC_Init         misc.o
+    0x0800035c   0x0800035c   0x00000002   Code   RO         5086    i.PendSV_Handler    stm32f4xx_it.o
+    0x0800035e   0x0800035e   0x00000002   Code   RO         5087    i.SVC_Handler       stm32f4xx_it.o
+    0x08000360   0x08000360   0x00000120   Code   RO            4    i.SetSysClock       system_stm32f4xx.o
+    0x08000480   0x08000480   0x00000002   Code   RO         5088    i.SysTick_Handler   stm32f4xx_it.o
+    0x08000482   0x08000482   0x00000002   PAD
+    0x08000484   0x08000484   0x00000068   Code   RO            6    i.SystemInit        system_stm32f4xx.o
+    0x080004ec   0x080004ec   0x0000001c   Code   RO          162    i.UartPutc          uart.o
+    0x08000508   0x08000508   0x00000084   Code   RO          163    i.UartStdOutInit    uart.o
+    0x0800058c   0x0800058c   0x00000004   Code   RO         5089    i.UsageFault_Handler  stm32f4xx_it.o
+    0x08000590   0x08000590   0x00000020   Code   RO         5270    i.__0printf$1       mc_w.l(printf1.o)
+    0x080005b0   0x080005b0   0x0000000e   Code   RO         5528    i.__scatterload_copy  mc_w.l(handlers.o)
+    0x080005be   0x080005be   0x00000002   Code   RO         5529    i.__scatterload_null  mc_w.l(handlers.o)
+    0x080005c0   0x080005c0   0x0000000e   Code   RO         5530    i.__scatterload_zeroinit  mc_w.l(handlers.o)
+    0x080005ce   0x080005ce   0x00000002   PAD
+    0x080005d0   0x080005d0   0x00000154   Code   RO         5277    i._printf_core      mc_w.l(printf1.o)
+    0x08000724   0x08000724   0x00000068   Code   RO         5191    i.fintdiv_init      function.o
+    0x0800078c   0x0800078c   0x0000000e   Code   RO          164    i.fputc             uart.o
+    0x0800079a   0x0800079a   0x00000002   PAD
+    0x0800079c   0x0800079c   0x0000002c   Code   RO         5156    i.main              main.o
+    0x080007c8   0x080007c8   0x00000020   Data   RO         5526    Region$$Table       anon$$obj.o
 
 
-    Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x080007fc, Size: 0x00000408, Max: 0x00030000, ABSOLUTE)
+    Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x080007e8, Size: 0x00000408, Max: 0x00030000, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0x20000000   0x080007fc   0x00000004   Data   RW         5500    .data               mc_w.l(stdout.o)
-    0x20000004   0x08000800   0x00000004   PAD
+    0x20000000   0x080007e8   0x00000004   Data   RW         5500    .data               mc_w.l(stdout.o)
+    0x20000004   0x080007ec   0x00000004   PAD
     0x20000008        -       0x00000400   Zero   RW          154    STACK               startup_stm32f429_439xx.o
 
 
@@ -1796,16 +1796,16 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
 
-       220         86          0          0          0       1060   function.o
-        44         26          0          0          0        479   main.o
-       120         14          0          0          0       1020   misc.o
-        36          8        488          0       1024        844   startup_stm32f429_439xx.o
-        26          0          0          0          0       4242   stm32f4xx_it.o
-       392         32          0          0          0     250953   system_stm32f4xx.o
-       174         16          0          0          0       2848   uart.o
+       200         84          0          0          0       1096   function.o
+        44         26          0          0          0        495   main.o
+       120         14          0          0          0       1060   misc.o
+        36          8        488          0       1024        868   startup_stm32f429_439xx.o
+        26          0          0          0          0       4418   stm32f4xx_it.o
+       392         32          0          0          0     251065   system_stm32f4xx.o
+       174         16          0          0          0       2904   uart.o
 
     ----------------------------------------------------------------------
-      1020        182        520          0       1024     261446   Object Totals
+      1000        180        520          0       1024     261906   Object Totals
          0          0         32          0          0          0   (incl. Generated)
          8          0          0          0          0          0   (incl. Padding)
 
@@ -1847,15 +1847,15 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-      1524        212        520          4       1028     260630   Grand Totals
-      1524        212        520          4       1028     260630   ELF Image Totals
-      1524        212        520          4          0          0   ROM Totals
+      1504        210        520          4       1028     261090   Grand Totals
+      1504        210        520          4       1028     261090   ELF Image Totals
+      1504        210        520          4          0          0   ROM Totals
 
 ==============================================================================
 
-    Total RO  Size (Code + RO Data)                 2044 (   2.00kB)
+    Total RO  Size (Code + RO Data)                 2024 (   1.98kB)
     Total RW  Size (RW Data + ZI Data)              1032 (   1.01kB)
-    Total ROM Size (Code + RO Data + RW Data)       2048 (   2.00kB)
+    Total ROM Size (Code + RO Data + RW Data)       2028 (   1.98kB)
 
 ==============================================================================
 

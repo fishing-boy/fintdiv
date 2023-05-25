@@ -88,7 +88,7 @@ void put_data(void)
 
 void fintdiv_init(void)
 {
-    *((int*)40023894) |= 0x00010000;  //使能时钟
+    *((int*)0x40023894) |= 0x00010000;  //使能时钟
     printf("enable fintdiv clock\r\n");
 
     NVIC_InitTypeDef NVIC_InitStructure;
@@ -111,7 +111,7 @@ void FINTDIV_IRQHandler(void)
 {
     if((FINTDIV->INTFLAG)&FINTDIV_INTEN_DIVEN)
     {
-        FINTDIV->INTFLAG &= ~FINTDIV_INTEN_DIVEN;
+        FINTDIV->INTCLEAL |= FINTDIV_INTEN_DIVEN;
         printf("div interrupt is open\r\n");
         printf("QUO = %d,REMAIN = %d\r\n",FINTDIV->QUO,FINTDIV->REMAIN);
     }

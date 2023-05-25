@@ -2,7 +2,7 @@
 .\objects\function.o: ..\User\main.h
 .\objects\function.o: ..\CMSIS\stm32f4xx.h
 .\objects\function.o: ..\CMSIS\core_cm4.h
-.\objects\function.o: E:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\function.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\function.o: ..\CMSIS\core_cmInstr.h
 .\objects\function.o: ..\CMSIS\core_cmFunc.h
 .\objects\function.o: ..\CMSIS\core_cmSimd.h
@@ -38,6 +38,6 @@
 .\objects\function.o: ..\Library\inc\stm32f4xx_fmc.h
 .\objects\function.o: ..\Library\inc\stm32f4xx_ltdc.h
 .\objects\function.o: ..\Library\inc\stm32f4xx_sai.h
-.\objects\function.o: E:\keil5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\function.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\function.o: ..\HadeWare\uart.h
 .\objects\function.o: ..\User\function.h

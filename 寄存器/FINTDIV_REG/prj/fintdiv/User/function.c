@@ -1,6 +1,6 @@
 #include "main.h"
 
-//软件延时函数
+//�?件延时函�?
 void delay(unsigned int T)
 {
 	while(T--)
@@ -21,65 +21,59 @@ void delay(unsigned int T)
 
 #ifdef TEST_REG
 
+int reg_read_value[4][11] = 
+{
+	{0x00000000,0x00000007,0x00000000,0x00000000,0xffffffff,0xffffffff,
+	0x00000000,0x00000000,0xffffffff,0x00000000,0x00000000},
+	{0x00000301,0x00000000,0x00000000,0x00000000,0x00000000,0x00000000,
+	0xffffffff,0x00000000,0x00000000,0x00000000,0x00000000},
+	{0x00000101,0x00000002,0x00000000,0x00000000,0x5a5a5a5a,0x5a5a5a5a,
+	0xffffffff,0x00000000,0x5a5a5a5a,0x00000000,0x00000202},
+	{0x00000000,0x00000005,0x00000000,0x00000000,0xa5a5a5a5,0xa5a5a5a5,
+	0xffffffff,0x00000000,0xa5a5a5a5,0x00000000,0x00000101}
+};
+
+int x = 0;
 void fintdiv_init(void)
 {
-    *((int*)40023894) |= 0x00010000;  //使能时钟
-    printf("enable fintdiv\r\n");
+    *((int*)0x40023894) |= 0x00010000;  //使能时钟
 
-    printf("write ff\r\n");
-    w_data(0xffffffff);
-    reset_fintdiv_reg();
-    printf("write 00\r\n");
-    w_data(0x00000000);
-    reset_fintdiv_reg();
-    printf("write 5a\r\n");
-    w_data(0x5a5a5a5a);
-    reset_fintdiv_reg();
-    printf("write a5\r\n");
-    w_data(0xa5a5a5a5);
-    reset_fintdiv_reg();
+		x = 0;
+    w_data_new(0xffffffff);
+    x = 1;
+    w_data_new(0x00000000);
+    x = 2;
+    w_data_new(0x5a5a5a5a);
+    x = 3;
+    w_data_new(0xa5a5a5a5);
 }
 
-void reset_fintdiv_reg(void)
+void w_data_new(unsigned int data)
 {
     uint32_t *p;
 
     p = (uint32_t *)FINTDIV_BASE;
+    p++;
 
-    for (int i = 0; i < 11; i++)
+    for (int i = 0; i < 10; i++)
     {
+        *p = data;
+				if(*p != reg_read_value[x][i])
+				{
+					while(1);
+				}
         *p = 0;
         p++;
     }
-}
-
-void w_data(unsigned int data)
-{
-    uint32_t *p;
 
     p = (uint32_t *)FINTDIV_BASE;
-
-    for (int i = 0; i < 11; i++)
-    {
-        *p = data;
-        p++;
-    }
-
-    put_data();
+    *p = data;
+		if(*p != reg_read_value[x][10])
+		{
+			while(1);
+		}
+    *p = 0;
     
-}
-
-void put_data(void)
-{
-    uint32_t *p1;
-
-    p1 = (uint32_t *)FINTDIV_BASE;
-    
-    for (int i = 0; i < 11; i++)
-    {
-        printf("addr 0x%08x data = 0x0x%08x\r\n",p1,*p1);
-        p1++;
-    }
 }
 
 #endif
@@ -100,10 +94,10 @@ void fintdiv_init(void)
     FINTDIV->DIVIDEND = 1024;
     FINTDIV->DIVISOR  = 256;
 
-    //使能中断
+    //使能�?�?
     FINTDIV->INTEN |= FINTDIV_INTEN_DIVEN;
 
-    //配置CR，选择有符号数或者无符号数，DIVGO启动运算
+    //配置CR，选择有�?�号数或者无符号数，DIVGO�?动运�?
     FINTDIV->CR |= FINTDIV_CR_DIVSIGN | FINTDIV_CR_DIVGO;
 }
 

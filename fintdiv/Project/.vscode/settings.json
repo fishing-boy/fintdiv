@@ -4,6 +4,8 @@
         "main.h": "c",
         "stdio.h": "c",
         "function.h": "c",
-        "string": "c"
+        "string": "c",
+        "stm32f4xx_adc.h": "c",
+        "eva_fintdiv.h": "c"
     }
 }

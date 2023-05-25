@@ -3,14 +3,14 @@
         {
             "name": "Template",
             "includePath": [
-                "e:\\软件\\fintdiv\\寄存器\\FINTDIV_REG\\prj\\fintdiv\\CMSIS",
-                "e:\\软件\\fintdiv\\寄存器\\FINTDIV_REG\\prj\\fintdiv\\Startup",
-                "e:\\软件\\fintdiv\\寄存器\\FINTDIV_REG\\prj\\fintdiv\\Library\\inc",
-                "e:\\软件\\fintdiv\\寄存器\\FINTDIV_REG\\prj\\fintdiv\\User",
-                "e:\\软件\\fintdiv\\寄存器\\FINTDIV_REG\\prj\\fintdiv\\HadeWare",
-                "E:\\keil5\\ARM\\ARMCC\\include",
-                "E:\\keil5\\ARM\\ARMCC\\include\\rw",
-                "e:\\软件\\fintdiv\\寄存器\\FINTDIV_REG\\prj\\fintdiv\\Library\\src"
+                "d:\\SOFT\\fintdiv-main\\寄存器\\FINTDIV_REG\\prj\\fintdiv\\CMSIS",
+                "d:\\SOFT\\fintdiv-main\\寄存器\\FINTDIV_REG\\prj\\fintdiv\\Startup",
+                "d:\\SOFT\\fintdiv-main\\寄存器\\FINTDIV_REG\\prj\\fintdiv\\Library\\inc",
+                "d:\\SOFT\\fintdiv-main\\寄存器\\FINTDIV_REG\\prj\\fintdiv\\User",
+                "d:\\SOFT\\fintdiv-main\\寄存器\\FINTDIV_REG\\prj\\fintdiv\\HadeWare",
+                "C:\\Keil_v5\\ARM\\ARMCC\\include",
+                "C:\\Keil_v5\\ARM\\ARMCC\\include\\rw",
+                "d:\\SOFT\\fintdiv-main\\寄存器\\FINTDIV_REG\\prj\\fintdiv\\Library\\src"
             ],
             "defines": [
                 "STM32F429_439xx",
